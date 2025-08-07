@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym - Exercise Categories & Workouts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-dumbbell"></i>
+                <span>Gym Beast</span>
+            </div>
+                         <ul class="nav-menu">
+                 <li><a href="#home" class="nav-link">Home</a></li>
+                 <li><a href="#categories" class="nav-link">Categories</a></li>
+                 <li><a href="#workout-days" class="nav-link">Workout Plan</a></li>
+                 <li><a href="#exercises" class="nav-link">Exercises</a></li>
+                 <li><a href="#about" class="nav-link">About</a></li>
+             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Transform Your Body</h1>
+                <p>Discover hundreds of exercises with detailed instructions, photos, and videos</p>
+                <a href="#categories" class="cta-button">Start Training</a>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2>Exercise Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="chest">
+                        <div class="category-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Chest</h3>
+                        <p>Build strong and defined chest muscles</p>
+                        <span class="exercise-count">12 exercises</span>
+                    </div>
+                    <div class="category-card" data-category="back">
+                        <div class="category-icon">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <h3>Back</h3>
+                        <p>Strengthen your back for better posture and power</p>
+                        <span class="exercise-count">19 exercises</span>
+                    </div>
+                    <div class="category-card" data-category="shoulders">
+                        <div class="category-icon">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3>Shoulders</h3>
+                        <p>Develop strong and defined shoulder muscles</p>
+                        <span class="exercise-count">19 exercises</span>
+                    </div>
+                    <div class="category-card" data-category="biceps">
+                        <div class="category-icon">
+                            <i class="fas fa-hand-rock"></i>
+                        </div>
+                        <h3>Biceps</h3>
+                        <p>Build impressive arm strength and definition</p>
+                        <span class="exercise-count">14 exercises</span>
+                    </div>
+                    <div class="category-card" data-category="triceps">
+                        <div class="category-icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <h3>Triceps</h3>
+                        <p>Develop powerful tricep muscles for arm strength</p>
+                        <span class="exercise-count">13 exercises</span>
+                    </div>
+                    <div class="category-card" data-category="legs">
+                        <div class="category-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Legs</h3>
+                        <p>Build strong and powerful leg muscles</p>
+                        <span class="exercise-count">12 exercises</span>
+                    </div>
+                    <div class="category-card" data-category="rest-recovery">
+                        <div class="category-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Rest/Recovery Day</h3>
+                        <p>Essential rest and recovery activities for muscle growth</p>
+                        <span class="exercise-count">3 exercises</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workout Days Section -->
+        <section id="workout-days" class="workout-days">
+            <div class="container">
+                <h2>Weekly Workout Plan</h2>
+                <div class="workout-days-grid">
+                    <div class="workout-day-card" data-category="day1">
+                        <div class="day-number">Day 1</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Chest & Triceps</h3>
+                        <p>Build upper body strength with chest and tricep exercises</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Chest</span>
+                            <span class="muscle-tag">Triceps</span>
+                            <span class="muscle-tag">Core</span>
+                        </div>
+                        <span class="workout-type">Strength</span>
+                    </div>
+                    <div class="workout-day-card" data-category="day2">
+                        <div class="day-number">Day 2</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Back & Biceps</h3>
+                        <p>Strengthen your back and biceps for balanced upper body</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Back</span>
+                            <span class="muscle-tag">Biceps</span>
+                            <span class="muscle-tag">Wrist</span>
+                        </div>
+                        <span class="workout-type">Strength</span>
+                    </div>
+                    <div class="workout-day-card" data-category="day3">
+                        <div class="day-number">Day 3</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Legs & Shoulders</h3>
+                        <p>Power through with quadriceps, calves, and shoulder training</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Quadriceps</span>
+                            <span class="muscle-tag">Calves</span>
+                            <span class="muscle-tag">Shoulders</span>
+                        </div>
+                        <span class="workout-type">Strength</span>
+                    </div>
+                    <div class="workout-day-card" data-category="day4">
+                        <div class="day-number">Day 4</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Chest & Triceps</h3>
+                        <p>Second chest and tricep session for muscle growth</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Chest</span>
+                            <span class="muscle-tag">Triceps</span>
+                            <span class="muscle-tag">Core</span>
+                        </div>
+                        <span class="workout-type">Strength</span>
+                    </div>
+                    <div class="workout-day-card" data-category="day5">
+                        <div class="day-number">Day 5</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Back & Biceps</h3>
+                        <p>Second back and bicep session for balanced development</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Back</span>
+                            <span class="muscle-tag">Biceps</span>
+                            <span class="muscle-tag">Wrist</span>
+                        </div>
+                        <span class="workout-type">Strength</span>
+                    </div>
+                    <div class="workout-day-card" data-category="day6">
+                        <div class="day-number">Day 6</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Shoulders & Legs</h3>
+                        <p>Focus on shoulders, hamstrings, and glutes for complete development</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Shoulders</span>
+                            <span class="muscle-tag">Hamstrings</span>
+                            <span class="muscle-tag">Glutes</span>
+                        </div>
+                        <span class="workout-type">Strength</span>
+                    </div>
+                    <div class="workout-day-card rest-day" data-category="day7">
+                        <div class="day-number">Day 7</div>
+                        <div class="workout-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Rest & Recovery</h3>
+                        <p>Essential rest day for muscle recovery and growth</p>
+                        <div class="muscle-groups">
+                            <span class="muscle-tag">Recovery</span>
+                            <span class="muscle-tag">Stretching</span>
+                            <span class="muscle-tag">Rest</span>
+                        </div>
+                        <span class="workout-type">Recovery</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises Section -->
+        <section id="exercises" class="exercises">
+            <div class="container">
+                <h2>Popular Exercises</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="chest">Chest</button>
+                    <button class="filter-btn" data-filter="back">Back</button>
+                    <button class="filter-btn" data-filter="shoulders">Shoulders</button>
+                    <button class="filter-btn" data-filter="biceps">Biceps</button>
+                    <button class="filter-btn" data-filter="triceps">Triceps</button>
+                    <button class="filter-btn" data-filter="legs">Legs</button>
+                    <button class="filter-btn" data-filter="rest-recovery">Rest/Recovery</button>
+                </div>
+                
+                <div class="exercises-grid" id="exercisesGrid">
+                    <!-- Exercises will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise Modal -->
+        <div id="exerciseModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="exercise-details">
+                    <div class="exercise-media">
+                        <div class="media-container">
+                            <img id="exerciseImage" src="" alt="Exercise">
+                            <video id="exerciseVideo" controls style="display: none;">
+                                <source src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="media-toggle">
+                                <button id="photoBtn" class="media-btn active">Photo</button>
+                                <button id="videoBtn" class="media-btn">Video</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-info">
+                        <h2 id="exerciseTitle"></h2>
+                        <div class="exercise-meta">
+                            <span id="exerciseCategory"></span>
+                            <span id="exerciseDifficulty"></span>
+                            <span id="exerciseDuration"></span>
+                        </div>
+                        <div class="exercise-description">
+                            <h3>Instructions</h3>
+                            <p id="exerciseInstructions"></p>
+                        </div>
+                        <div class="exercise-muscles">
+                            <h3>Target Muscles</h3>
+                            <p id="exerciseMuscles"></p>
+                        </div>
+                        <div class="exercise-tips">
+                            <h3>Tips</h3>
+                            <p id="exerciseTips"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gym Beast</h3>
+                    <p>Your ultimate destination for fitness and wellness.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#exercises">Exercises</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: </p>
+                    <p>Phone: 9999999999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gym-Beast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+chest
+biceps
+triceps
+rest-recovery
+legs
+back
+shoulders
